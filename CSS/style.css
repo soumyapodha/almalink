@@ -21,7 +21,7 @@ nav{
     padding: 5px 0;
 }
 .logo{
-    width: 120px;
+    width: 220px;
     cursor: pointer;
 }
 nav ul{
@@ -57,9 +57,6 @@ nav ul li a:hover::after{
     color: #fff;
     position: absolute;
     bottom: 8%;
-}
-.university{
-    opacity: 20%;
 }
 .text-box p{
     font-size: 50px;
