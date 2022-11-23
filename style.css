@@ -59,7 +59,7 @@ a {
 
 .container .menu-list ul {
   flex: 1;
-  text-align: right;
+  text-align: center;
   padding-right: 30px;
 }
 .container .menu-list ul li {
@@ -224,6 +224,7 @@ header.active .bar::after {
   color: transparent;
   -webkit-text-stroke: 2px rgb(255, 255, 255);
   background-image: url(../Images/back.png);
+  background-clip: text;
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
@@ -259,9 +260,9 @@ header.active .bar::after {
   z-index: -1;
 }
 
-.hero-text {
-  /* max-width: 35rem; */
-}
+/* .hero-text {
+   max-width: 35rem; 
+} */
 
 .hero-heading {
   line-height: 1;
