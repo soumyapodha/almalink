@@ -1,13 +1,16 @@
 # almalink
-OBJECTIVE:-Today we live in the millennium era of dreams where every person is in a rat race to achieve one thing or the other in their life.
+OBJECTIVE:
+-Today we live in the millennium era of dreams where every person is in a rat race to achieve one thing or the other in their life.
 
 The main objective of our idea is to build a feasible and interactive community of alumni and students of every university individually and then have a collective community of all universities throughout the state of Odisha.
 
-IMPLEMENTATION:---> We are planning to implement the idea of an expansive student-alumni community through our idea of ALMALINK.
+IMPLEMENTATION:
+--> We are planning to implement the idea of an expansive student-alumni community through our idea of ALMALINK.
 
 --> Here we are planning to make an online expansive community called ALMALINK by making a responsive website and an android application.
 
-APPLICATION:---> We believe that this effort will collectively provide the necessary exposure as well as the work experience required for the competitive society of today's world.
+APPLICATION:
+--> We believe that this effort will collectively provide the necessary exposure as well as the work experience required for the competitive society of today's world.
 
 --> Our idea has a unique combination of freelancing and student-alumni interaction that is never seen before on such social media platforms.
 
