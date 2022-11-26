@@ -1,0 +1,43 @@
+header {
+  padding: 0.5rem;
+  background: linear-gradient(45deg, #7cd4f8, #8aa6f5);
+}
+
+.sticky {
+  padding: 0.3rem;
+}
+
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 600px;
+  padding-top: 3rem;
+  overflow: hidden;
+  margin: auto;
+}
+.quiz-header {
+  padding: 1rem 3rem;
+  border: 2px solid;
+  border-radius: 1rem;
+  margin: 4rem 0 2rem;
+}
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  width: 40%;
+}
