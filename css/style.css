@@ -54,39 +54,6 @@ a {
   color: inherit;
 }
 
-/* Navbar Animation */
-
-.container .menu-list ul {
-  flex: 1;
-  text-align: center;
-  padding-right: 30px;
-}
-.container .menu-list ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 5px 5px;
-}
-.container .menu-list ul li a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  position: relative;
-}
-.container .menu-list ul li a::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  transition: width 0.3s;
-}
-
-.container .menu-list ul li a:hover::after {
-  width: 50%;
-}
-
 /****** Utility Classes *******/
 
 /* buttons,containers,lists etc */
@@ -100,6 +67,7 @@ a {
 }
 
 button {
+  display: block;
   margin: 1rem auto;
   padding: 0.25rem 1rem;
   width: fit-content;
@@ -212,6 +180,39 @@ header.active .bar::before {
 
 header.active .bar::after {
   transform: translateY(0px) rotate(45deg);
+}
+
+/* Navbar Animation */
+
+.container .menu-list ul {
+  flex: 1;
+  text-align: center;
+  padding-right: 30px;
+}
+.container .menu-list ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 5px;
+}
+.container .menu-list ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  position: relative;
+}
+.container .menu-list ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.container .menu-list ul li a:hover::after {
+  width: 50%;
 }
 
 /* hero section */
@@ -364,25 +365,10 @@ header.active .bar::after {
   justify-content: center;
 }
 
-/* About section */
-
-.about-us-content,
-.feature-content {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  gap: 2rem;
-  border-radius: 1rem;
-  box-shadow: var(--my-shadow);
-  justify-content: space-around;
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.about-us-img {
-  width: min(20rem, 100%);
-}
-.about-us-text {
-  width: min(35rem, 90%);
+.courses button {
+  display: block;
+  border-radius: 0;
+  border: 2px solid black;
 }
 
 /******** feature Section ********/
@@ -395,17 +381,17 @@ header.active .bar::after {
   width: min(30rem, 90%);
 }
 
-.feature-items {
+.feature-items ul {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin: 1em;
+  flex-wrap: wrap;
 }
 
 .feature-items li {
   list-style: none;
   padding: 0.5em 0.8em;
-  margin: 0.8em;
   background-color: #c0def7;
   border-bottom: 2px solid #007bff;
   border-radius: 1rem;
@@ -418,14 +404,114 @@ header.active .bar::after {
   cursor: pointer;
 }
 
+/* About section and community section*/
+
+.about-us-content,
+.feature-content,
+.community-section .container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--my-shadow);
+  justify-content: space-around;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.about-us-img,
+.community-img {
+  width: min(30rem, 100%);
+}
+
+.about-us-text,
+.community-text {
+  width: min(30rem, 90%);
+}
+
 /* footer */
 
 footer {
-  padding: 1rem;
   background: var(--my_gradient);
-  font-size: 1.2rem;
 }
 
+.logo span {
+  font-weight: bold;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 0 50px;
+  font-size: 17px;
+}
+
+.mid-row {
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+
+.footer-row {
+  margin-block: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.top {
+  justify-content: flex-start;
+}
+
+.footer-row .col5 ul li {
+  list-style-type: none;
+  margin: 5px 10px;
+}
+
+.footer-row .col5 .logo {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+}
+
+.footer-row .col5 .logo a {
+  padding-bottom: 5px;
+}
+
+.footer-row .col5 ul li a {
+  text-decoration: none;
+}
+
+.footer-row .col4 ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.footer-row .col4 ul .heading {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+/* .footer-row .col4 ul li a {
+  text-decoration: none;
+} */
+
+.footer-row .col4 .col-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 480px;
+}
+
+.footer-row .col4 .side-col {
+  height: 200px;
+  width: 2px;
+  background: black;
+}
 /* Media Queries */
 
 @media (max-width: 1100px) {
