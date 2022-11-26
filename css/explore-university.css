@@ -5,10 +5,20 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 } */
+
+header {
+  padding: 0.5rem;
+  background: linear-gradient(45deg, #7cd4f8, #8aa6f5);
+}
+
+.sticky {
+  padding: 0.3rem;
+}
+
 .section {
   width: 100%;
-  min-height: 80vh;
-  background-color: #ddd;
+  background-color: aliceblue;
+  padding-block: 8rem;
 }
 .about-alumini {
   display: flex;
@@ -52,10 +62,12 @@
   margin-top: 30px;
 }
 .content-section .content .button a {
-  background-color: #3d3d3d;
-  padding: 12px 40px;
+  background: var(--my_gradient);
+  padding: 0.5rem 0.75rem;
   text-decoration: none;
+  font-weight: bold;
   color: #fff;
+  border-radius: 0.5rem;
   font-size: 25px;
   letter-spacing: 1.5px;
 }
@@ -75,9 +87,9 @@
   color: #3d3d3d;
 }
 .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 @media screen and (max-width: 768px) {
   /* .container{
