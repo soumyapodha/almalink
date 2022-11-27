@@ -7,11 +7,21 @@ header {
   padding: 0.3rem;
 }
 
+.banner {
+  padding-top: 6rem;
+}
+
+.banner p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 .quiz-container {
   background-color: #fff;
   border-radius: 10px;
   width: 600px;
-  padding-top: 3rem;
   overflow: hidden;
   margin: auto;
 }
@@ -19,7 +29,8 @@ header {
   padding: 1rem 3rem;
   border: 2px solid;
   border-radius: 1rem;
-  margin: 4rem 0 2rem;
+  margin: 0 0 2rem;
+  display: none;
 }
 h2 {
   padding: 1rem;
@@ -40,4 +51,39 @@ ul li label {
 
 button {
   width: 40%;
+}
+
+.heading {
+  font-size: 3rem;
+  color: transparent;
+  background: linear-gradient(45deg, #4835ff, #00ffeb);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.quiz-list .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  justify-content: center;
+}
+
+.box {
+  width: 10rem;
+  background: linear-gradient(45deg, #70fffa, #8c9cf8);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+.box:hover {
+  box-shadow: 0px 0px 24px 5px #89a6f8;
+}
+
+.box p {
+  margin-top: 1rem;
 }

@@ -636,15 +636,15 @@ footer .container {
     margin: 0px 10% 2rem;
   }
 }
-footer{
+footer {
   width: 100%;
   background: linear-gradient(45deg, #70fffa, #8c9cf8);
   color: rgb(0, 0, 0);
-  padding: 50px 0 30px;
+  padding: 1.5rem 0 0.7rem 0;
   font-size: 13px;
   line-height: 20px;
 }
-.row{
+.row {
   width: 85%;
   margin: auto;
   display: flex;
@@ -652,71 +652,66 @@ footer{
   align-items: flex-start;
   justify-content: space-between;
 }
-.col{
-  flex-basis: 25%;
-  padding: 10px;
+.col {
+  flex-basis: 26%;
 }
-.col:nth-child(2), .col:nth-child(3){
-  flex-basis: 15%;
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 24%;
 }
-.footer_logo{
-  width: 80px;
-  position: relative;
-  top: -23px;
-  left: -20px;
+.footer_logo {
+  width: 7rem;
+  scale: 2.5;
 }
-.footer_about{
-  position: relative;
-  top: -23px;
+.footer_about {
 }
-.col h3{
+.col h3 {
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
 }
-.footer_email{
+.footer_email {
   width: fit-content;
-  border-bottom: 1px solid #f66335;
-  margin: 20px 0;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #000;
 }
-.col ul li{
+.col ul li {
   list-style: none;
-  margin-bottom: 12px;
+  margin-bottom: 0.3rem;
 }
-.col ul li a{
+.col ul li a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-.col form{
-  padding-bottom: 15px;
+.col form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #f66335;
-  margin-bottom: 50px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 1rem;
 }
-.col form .icon{
-  font-size: 18px;
+.col form .icon {
+  font-size: 3rem;
   margin-right: 10px;
+  color: white;
 }
-.col form input{
+.col form input {
   width: 100%;
   background: transparent;
-  color: #ccc;
+  color: black;
   border: 0;
   outline: none;
 }
-.col form button{
+.col form button {
   background: transparent;
   border: 0;
   outline: none;
   cursor: pointer;
 }
-.col form button .icon_right{
-  font-size: 16px;
-  color: #ccc;
+.col form button .icon_right {
+  font-size: 2rem;
 }
-.col .social_icons .social_icon{
+.col .social_icons .social_icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -724,21 +719,22 @@ footer{
   line-height: 40px;
   font-size: 20px;
   color: #fff;
-  background: #f66335;
-  margin-right: 15px;
-  padding: 5px;
+  background: #000000;
+  margin-right: 10px;
+  padding: 0.5rem;
   cursor: pointer;
 }
 hr {
   width: 90%;
   border: 0;
-  border-bottom: 2px solid #f66335;
-  margin: 20px auto;
+  border-bottom: 2px solid #000;
+  margin: 0 auto 0.7rem;
 }
-footer .copyright{
+footer .copyright {
   text-align: center;
+  font-size: 1.2rem;
 }
-.bottom_line{
+.bottom_line {
   width: 100%;
   height: 5px;
   background: #767676;
@@ -748,21 +744,41 @@ footer .copyright{
   left: 0;
   overflow: hidden;
 }
-.bottom_line span{
+.bottom_line span {
   width: 15px;
   height: 100%;
-  background: #f66335;
+  background: #000000;
   border-radius: 3px;
   position: absolute;
   top: 0;
   left: 10px;
   animation: moveline 2s linear infinite;
 }
-@keyframes moveline{
-  0%{
-      left:-20px;
+@keyframes moveline {
+  0% {
+    left: -20px;
   }
-  100%{
-      left:100%;
+  100% {
+    left: 100%;
   }
+}
+
+.col:nth-child(4) h3 {
+  margin: 0;
+}
+
+.social_icons,
+.col:nth-child(1) {
+  display: flex;
+  align-items: center;
+  margin-left: -3rem;
+}
+
+.col:nth-child(1) {
+  flex-direction: column;
+}
+
+.col form input::placeholder {
+  color: rgb(44, 44, 44);
+  font-size: 1rem;
 }
