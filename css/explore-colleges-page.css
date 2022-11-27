@@ -14,45 +14,6 @@
     padding: 0 5%;
     overflow-x: hidden;
 }
-nav{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-nav .logo{
-    width: 100px;
-}
-nav ul li{
-    list-style:none;
-    display: inline-block;
-    margin-left: 40px;
-}
-nav ul li a{
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    padding: 0 10px;
-}
-nav ul li a:after{
-    content:"";
-    position: absolute;
-    background-color: #f66335;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-nav ul li a:hover::after{
-    width: 100%;
-}
-
 .content{
     color: #fff;
     width: 100%;
