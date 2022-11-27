@@ -1,19 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg, #70fffa, #8c9cf8);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 0 5%;
+  overflow-x: hidden;
 }
-.main{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(45deg, #70fffa, #8c9cf8);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    padding: 0 5%;
-    overflow-x: hidden;
+
+.logo-section a {
+  display: grid;
+  place-items: center;
 }
+
+/*
 nav{
     width: 100%;
     position: absolute;
@@ -51,224 +52,98 @@ nav ul li a:after{
 }
 nav ul li a:hover::after{
     width: 100%;
-}
+} */
 
-.content{
-    color: #fff;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+.content {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-.content h1{
-    font-size: 120px;
-    line-height: 140px;
-    font-weight: 600;
-    opacity: 0;
+.content h1 {
+  font-size: 120px;
+  line-height: 140px;
+  font-weight: 600;
+  opacity: 0;
 }
-.content p{
-    line-height: 28px;
-    opacity: 0;
+.content p {
+  line-height: 28px;
+  opacity: 0;
 }
-.links{
-    margin-top: 30px;
-    opacity: 0;
+.links {
+  margin-top: 30px;
+  opacity: 0;
 }
 .links button {
-    width: 200px;
-    padding: 15px 0;
-    margin: 0 15px;
-    text-align: center;
-    transition: 0.5s;
-    font-weight: 600;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #f66335;
-    cursor: pointer;
-    color: #fff;
-    border-radius: 25px;
-    background: transparent;
+  /* width: 200px; */
+  padding: 15px 43px;
+  margin: 0 15px;
+  text-align: center;
+  transition: 0.5s;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #006bff;
+  cursor: pointer;
+  color: #fff;
+  background: transparent;
 }
-.anim{
-    animation: slideUp 1s linear forwards;
-    animation-delay: 1s;
+.anim {
+  animation: slideUp 1s linear forwards;
+  animation-delay: 1s;
+  display: flex;
+  justify-content: center;
 }
-@keyframes slideUp{
-    0%{
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
-p.anim{
-    animation-delay: 2s;
+p.anim {
+  animation-delay: 2s;
 }
-.links.anim{
-    animation-delay: 3s;
+.links.anim {
+  animation-delay: 3s;
 }
-@media (min-aspect-ratio: 16/9){
-    .video{
-        width: 100%;
-        height: auto;
-    }
+@media (min-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
 }
-@media (max-aspect-ratio: 16/9){
-    .video{
-        width: auto;
-        height: 100%;
-    }
-}
-.content button span{
-    background: #f66335;
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width: auto;
     height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
+  }
 }
-.content button:hover span{
-    width: 100%;
+.content button span {
+  background: #459cfc;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
 }
-.content button:hover{
-    border: 0;
+.content button:hover span {
+  width: 100%;
 }
-footer{
-    width: 100%;
-    background: linear-gradient(45deg, #70fffa, #8c9cf8);
-    color: rgb(0, 0, 0);
-    padding: 50px 0 30px;
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .row{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .col{
-    flex-basis: 25%;
-    padding: 10px;
-  }
-  .col:nth-child(2), .col:nth-child(3){
-    flex-basis: 15%;
-  }
-  .footer_logo{
-    width: 80px;
-    position: relative;
-    top: -23px;
-    left: -20px;
-  }
-  .footer_about{
-    position: relative;
-    top: -23px;
-  }
-  .col h3{
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
-  }
-  .footer_email{
-    width: fit-content;
-    border-bottom: 1px solid #f66335;
-    margin: 20px 0;
-  }
-  .col ul li{
-    list-style: none;
-    margin-bottom: 12px;
-  }
-  .col ul li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
-  .col form{
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #f66335;
-    margin-bottom: 50px;
-  }
-  .col form .icon{
-    font-size: 18px;
-    margin-right: 10px;
-  }
-  .col form input{
-    width: 100%;
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
-  }
-  .col form button{
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-  }
-  .col form button .icon_right{
-    font-size: 16px;
-    color: #ccc;
-  }
-  .col .social_icons .social_icon{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #fff;
-    background: #f66335;
-    margin-right: 15px;
-    padding: 5px;
-    cursor: pointer;
-  }
-  hr {
-    width: 90%;
-    border: 0;
-    border-bottom: 2px solid #f66335;
-    margin: 20px auto;
-  }
-  footer .copyright{
-    text-align: center;
-  }
-  .bottom_line{
-    width: 100%;
-    height: 5px;
-    background: #767676;
-    border-radius: 3px;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    overflow: hidden;
-  }
-  .bottom_line span{
-    width: 15px;
-    height: 100%;
-    background: #f66335;
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    animation: moveline 2s linear infinite;
-  }
-  @keyframes moveline{
-    0%{
-        left:-20px;
-    }
-    100%{
-        left:100%;
-    }
-  }
 
-  
+.logo-section .container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  justify-content: space-evenly;
+}
