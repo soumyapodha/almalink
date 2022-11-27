@@ -1,0 +1,125 @@
+header {
+  padding: 0.5rem;
+  background: linear-gradient(45deg, #7cd4f8, #8aa6f5);
+  margin-bottom: 10rem;
+}
+
+.sticky {
+  padding: 0.3rem;
+}
+
+body {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #000;
+  background-size: cover;
+  background: url(/Images/swirl_pattern.png) top left repeat;
+}
+
+.banner {
+  margin-top: 7rem;
+}
+
+.banner h2 {
+  font-size: 4rem;
+  background: linear-gradient(45deg, #4447ea, #ff8f8b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-weight: bold;
+}
+
+.banner span {
+  font-size: 5rem;
+}
+
+.events .contanier {
+  display: flex;
+}
+
+.event-list {
+  display: flex;
+}
+
+.event-list ul {
+  margin: 0.5rem;
+}
+
+.event-list h3 {
+  background: lightblue;
+  font-size: 1.5rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.event-list li {
+  text-align: center;
+  font-size: 1.5rem;
+  background: #9fd2ff;
+  border-radius: 0.4rem;
+  margin: 0.4rem;
+}
+
+.reg-img {
+  max-width: 30rem;
+}
+
+.rules {
+  max-width: 30rem;
+}
+
+.txt-content {
+  max-width: 55%;
+}
+
+.txt-content p {
+  margin: 0.5rem 0;
+}
+
+.heading {
+  margin: 0 26% 2rem;
+}
+
+.registration-box {
+  background: lightblue;
+  max-width: 40%;
+  border-radius: 0.4rem;
+}
+
+.title {
+  color: black;
+  font-size: 2rem;
+}
+
+.input {
+  color: black;
+  border: 2px solid black;
+}
+
+.input-container label {
+  color: #000;
+}
+
+.btn {
+  color: black;
+  background-color: #7dd3f8;
+  margin: 0 auto;
+  border: 2px solid;
+  display: block;
+  width: 50%;
+  /* border-radius: .4rem; */
+}
+
+form {
+  z-index: 0;
+}
+
+.input-container span::before,
+.input-container span::after {
+  background-color: lightblue;
+}

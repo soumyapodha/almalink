@@ -1,0 +1,186 @@
+body {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 960px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #000;
+    background-size: cover;
+    background: url(./Images/swirl_pattern.png) top left repeat;
+}
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+#Header {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding-top: 50px;
+}
+.logo {
+    width: auto;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 180px;
+    padding-bottom: 50px;
+}
+.logo h1 {
+    color: #0f66b1;
+    font-weight: 600;
+}
+.logo img {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+#Content h2 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 300;
+    color: #676767;
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 50px;
+    letter-spacing: -2px;
+    line-height: 40px;
+    text-align: center;
+}
+.countdown {
+    text-align: center;
+    margin-top: 30px;
+    background: #5381E4;
+    padding: 60px 0;
+}
+.styled div:first-child {
+    margin-left: 0;
+}
+.styled div span {
+    display: block;
+    padding-top: 3px;
+    font-size: 19px;
+    font-weight: normal;
+    text-align: center;
+}
+.styled div {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 15px;
+    padding: 0 30px;
+    color: #fff;
+    text-shadow: none;
+    vertical-align: middle;
+}
+.subscribe {
+    background: #fff;
+}
+/* @media (min-width: 1200px)
+.container {
+    width: 1170px;
+}
+
+@media (min-width: 992px)
+.container {
+    width: 970px;
+}
+@media (min-width: 768px)
+.container {
+    width: 750px;
+} */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+div {
+    display: block;
+}
+h3 {
+    font-size: 30px;
+    margin: 0.2em 0;
+    text-align: center;
+    color: #888;
+    padding: 0 0 29px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+#subscribe p {
+    text-align: center;
+}
+p, pre {
+    margin: 0 0 10px 0;
+}
+#subscribe input {
+    background: rgba(255, 255, 255, 0.52);
+    color: #7a7a7a;
+    vertical-align: middle;
+    width: 393px;
+    border: 1px solid #888;
+    padding: 10px;
+    font-size: 14px;
+}
+#subscribe input[type="button"] {
+    background: rgba(255, 255, 255, 1);
+    width: auto;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: 0 0 0 -6px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #888;
+}
+#socialIcons {
+    display: block;
+}
+#socialIcons ul {
+    margin: 40px 0 0 0px;
+    padding: 0px;
+    text-align: center;
+}
+#socialIcons ul li {
+    margin-right: 19px;
+    height: 56px;
+    line-height: 50px;
+    list-style-type: none;
+    display: inline-block;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #888;
+}
+#socialIcons ul li a {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+}
+.twitterIcon, .facebookIcon, .linkedInIcon, .pintrestIcon {
+    background: url(./Images/social-icons.png) -74px 0px;
+}
+a {
+    color: gray;
+    text-decoration: none;
+}
+.features {
+    background: rgba(55, 55, 55, 0.15);
+}
+
+.spacing {
+    padding: 60px 0;
+}
