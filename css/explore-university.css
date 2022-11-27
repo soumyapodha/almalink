@@ -24,6 +24,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 /* .container{
 	width: 80%;
@@ -138,10 +139,10 @@ header {
   min-width: 230px;
   max-width: 315px;
   width: 100%;
-  color: #ffffff;
+  color: #000000;
   text-align: left;
+  border-radius: 0.4rem;
   line-height: 1.4em;
-  background-color: #141414;
 }
 .snip1336 * {
   -webkit-box-sizing: border-box;
@@ -156,7 +157,7 @@ header {
 }
 .snip1336 figcaption {
   width: 100%;
-  background-color: #141414;
+  background-color: #87b0f9;
   padding: 25px;
   position: relative;
 }
@@ -173,7 +174,7 @@ header {
 }
 .snip1336 figcaption a {
   padding: 5px;
-  border: 1px solid #ffffff;
+  border: 3px solid #ffffff;
   color: #ffffff;
   font-size: 0.7em;
   text-transform: uppercase;
@@ -183,7 +184,7 @@ header {
   width: 47%;
   text-align: center;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 1px;
 }
 .snip1336 figcaption a:hover {
@@ -201,8 +202,7 @@ header {
 }
 .snip1336 .follow {
   margin-right: 4%;
-  border-color: #2980b9;
-  color: #2980b9;
+  border: 3px solid white;
 }
 .snip1336 h2 {
   margin: 0 0 5px;
@@ -211,7 +211,6 @@ header {
 .snip1336 h2 span {
   display: block;
   font-size: 0.5em;
-  color: #2980b9;
 }
 .snip1336 p {
   margin: 0 0 10px;
