@@ -729,10 +729,10 @@ footer{
   padding: 5px;
   cursor: pointer;
 }
-hr{
+hr {
   width: 90%;
   border: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #f66335;
   margin: 20px auto;
 }
 footer .copyright{
