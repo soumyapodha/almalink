@@ -72,6 +72,13 @@ const quizData = [
 ];
 
 const quiz = document.querySelector(".quiz-header");
+const box = document.querySelectorAll(".box");
+box.forEach((e) => {
+  e.addEventListener("click", () => {
+    quiz.style.display = "block";
+  });
+});
+
 const answerEls = document.querySelectorAll(".answer");
 const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a_text");
@@ -79,21 +86,27 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
+
 let currentQuiz = 0;
 let score = 0;
-loadQuiz();
-function loadQuiz() {
+
+function deselectAnswers() {
+  answerEls.forEach((answerEl) => (answerEl.checked = false));
+}
+
+const loadQuiz = () => {
   deselectAnswers();
-  const currentQuizData = quizData[currentQuiz];
+  console.log(currentQuiz);
+  const currentQuizData = obj[currentQuiz];
   questionEl.innerText = currentQuizData.question;
   a_text.innerText = currentQuizData.a;
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
-}
-function deselectAnswers() {
-  answerEls.forEach((answerEl) => (answerEl.checked = false));
-}
+};
+
+loadQuiz(quizData);
+
 function getSelected() {
   let answer;
   answerEls.forEach((answerEl) => {
@@ -103,6 +116,7 @@ function getSelected() {
   });
   return answer;
 }
+
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
   if (answer) {

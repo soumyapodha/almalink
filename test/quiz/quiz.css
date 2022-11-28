@@ -98,7 +98,7 @@ label {
 
 label::before {
   content: "";
-  background: url("../Images/check-circle.svg");
+  background: url("/check-circle.svg");
   background-position: center;
   background-size: contain;
   width: 32px;
