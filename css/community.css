@@ -269,6 +269,7 @@ a:hover {
 .option_text {
   font-size: 0.9rem;
   font-weight: 600;
+  color: white;
 }
 .dropdown {
   position: relative;
@@ -520,7 +521,7 @@ a:hover {
 
 .post_box {
   padding: 15px;
-  background-color: #b5e7ff;
+  background-color: #76a6bc;
   margin-bottom: 20px;
   border-radius: 10px;
   color: var(--para_color);
