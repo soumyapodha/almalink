@@ -771,11 +771,12 @@ footer .copyright {
 .col:nth-child(1) {
   display: flex;
   align-items: center;
-  margin-left: -3rem;
+  justify-content: center;
 }
 
 .col:nth-child(1) {
   flex-direction: column;
+  margin-left: -2rem;
 }
 
 .col form input::placeholder {
