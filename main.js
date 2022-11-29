@@ -134,13 +134,3 @@ submitBtn.addEventListener("click", () => {
     }
   }
 });
-
-
-
-
-const container = document.querySelector(".container");
-const show_btn = document.querySelector(".show-btn");
-
-show_btn.addEventListener("click", () => {
-container.style.display = 'block';
-})
