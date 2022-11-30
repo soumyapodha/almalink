@@ -44,7 +44,7 @@ const close_btn = document.querySelector(".close-btn1");
 open_modal.addEventListener("click", (e) => {
   e.preventDefault();
   containo.style.display = "block";
-  document.body.style.height = "100vh";
+  document.documentElement.scrollTop = 0;
 });
 
 submit_btn.addEventListener("click", (e) => {
@@ -67,7 +67,7 @@ const close_btn2 = document.querySelector(".close-btn2");
 open_modal2.addEventListener("click", (e) => {
   e.preventDefault();
   containo2.style.display = "block";
-  document.body.style.height = "100vh";
+  document.documentElement.scrollTop = 0;
 });
 
 submit_btn2.addEventListener("click", (e) => {
