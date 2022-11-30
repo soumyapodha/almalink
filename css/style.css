@@ -804,7 +804,7 @@ footer .copyright {
 }
 
 .containo {
-  display: block;
+  display: none;
   border-radius: 0.5rem;
   background: #fff;
   width: 410px;
@@ -840,12 +840,16 @@ form .data label {
   font-size: 18px;
 }
 form .data input {
-  height: 100%;
+  height: 85%;
   width: 100%;
   padding-left: 10px;
   font-size: 17px;
   border: 1px solid silver;
   border-radius: 20px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: green;
 }
 form .data input:focus {
   border-color: #3498db;
