@@ -472,6 +472,11 @@ a:hover {
   align-items: stretch;
 }
 
+.all-posts {
+  overflow-y: auto;
+  height: 125vh;
+}
+
 .post_item {
   background-color: white;
 
