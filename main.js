@@ -34,29 +34,51 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
-
 // sign in js
 
 const open_modal = document.querySelector("#sign-in");
-const containo= document.querySelector(".containo");
-const submit_btn = document.querySelector("#submit-btn");
-const close_btn = document.querySelector(".close-btn");
+const containo = document.querySelector("#signin_modal");
+const submit_btn = document.querySelector("#login-btn");
+const close_btn = document.querySelector(".close-btn1");
 
-open_modal.addEventListener("click",(e)=>{
+open_modal.addEventListener("click", (e) => {
   e.preventDefault();
-containo.style.display = 'block';
-document.body.style.height = '100vh';
+  containo.style.display = "block";
+  document.body.style.height = "100vh";
 });
 
-submit_btn.addEventListener("click",(e)=>{
+submit_btn.addEventListener("click", (e) => {
   e.preventDefault();
-  containo.style.display = 'none';
-  });
+  containo.style.display = "none";
+});
 
-  close_btn.addEventListener("click",(e)=>{
-    e.preventDefault();
-    containo.style.display = 'none';
-    });
+close_btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  containo.style.display = "none";
+});
+
+//sign up
+
+const open_modal2 = document.querySelector("#sign-up");
+const containo2 = document.querySelector("#signup_modal");
+const submit_btn2 = document.querySelector("#submit-btn2");
+const close_btn2 = document.querySelector(".close-btn2");
+
+open_modal2.addEventListener("click", (e) => {
+  e.preventDefault();
+  containo2.style.display = "block";
+  document.body.style.height = "100vh";
+});
+
+submit_btn2.addEventListener("click", (e) => {
+  e.preventDefault();
+  containo2.style.display = "none";
+});
+
+close_btn2.addEventListener("click", (e) => {
+  e.preventDefault();
+  containo2.style.display = "none";
+});
 
 /* QUIZZES */
 
@@ -159,4 +181,4 @@ submit_btn.addEventListener("click",(e)=>{
 //   }
 // });
 
-// 
+//
