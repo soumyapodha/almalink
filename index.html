@@ -19,7 +19,9 @@
   <header>
     <div class="container">
       <div class="logo">
-        <a href="./index.html"><h1>Alma<span>Link</span></h1></a>
+        <a href="./index.html">
+          <h1>Alma<span>Link</span></h1>
+        </a>
       </div>
       <nav class="menu-list">
         <ul>
@@ -43,7 +45,7 @@
     <div class="hero">
       <div class="container">
         <div class="hero-text">
-          <h2 class="hero-heading">Welcome to <span>Almalink..</span></h2>
+          <h2 class="hero-heading">Welcome to <span>Almalink...</span></h2>
           <p>Past building the future...</p>
 
           <div class="email-box">
@@ -75,11 +77,11 @@
         <a href="/Other-pages/sambalpur-university.html">
           <div class="card"><img src="/Images/Sambalpur_University_logo.png" alt=""></div>
         </a>
-        <a href="./Other-pages/gm-university.html">
-          <div class="card"><img src="/Images/Gangadhar_Meher_University_logo.png" alt=""></div>
-        </a>
         <a href="https://www.nitrkl.ac.in/">
           <div class="card"><img src="/Images/NIT_Rourkela_Colour_Logo.svg" alt=""></div>
+        </a>
+        <a href="./Other-pages/gm-university.html">
+          <div class="card"><img src="/Images/CET.png" alt=""></div>
         </a>
         <a href="/Other-pages/rajendra-university.html">
           <div class="card"><img src="/Images/Rajendra_Prasad_Logo_Solid-300x281.png" alt=""></div>
@@ -156,32 +158,73 @@
     </section>
   </main>
 
-  <div class="containo">
-    <label for="show" class="close-btn fas fa-times" title="close"></label>
+  <div class="containo" id="signin_modal">
+    <label for="show" class="close-btn1 fas fa-times" title="close"></label>
     <div class="text">
-       Login Form
+      Login Form
     </div>
     <form action="#">
-       <div class="data">
-          <label>Email or Phone</label>
-          <input type="text" required>
-       </div>
-       <div class="data">
-          <label>Password</label>
-          <input type="password" required>
-       </div>
-       <div class="forgot-pass">
-          <a href="#">Forgot Password?</a>
-       </div>
-       <div class="btn">
-          <div class="inner"></div>
-          <button type="submit" id="submit-btn">login</button>
-       </div>
-       <div class="signup-link">
-          Not a member? <a href="#">Signup now</a>
-       </div>
+      <div class="data">
+        <label>Email or Phone</label>
+        <input type="text" required>
+      </div>
+      <div class="data">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+      <div class="forgot-pass">
+        <a href="#">Forgot Password?</a>
+      </div>
+      <div class="btn">
+        <div class="inner"></div>
+        <button type="submit" id="login-btn">login</button>
+      </div>
+
     </form>
- </div>
+  </div>
+  <div class="containo" id="signup_modal">
+    <label for="show" class="close-btn2 fas fa-times" title="close"></label>
+    <div class="text">
+      SignUp Form
+    </div>
+    <form action="#">
+      <div class="data">
+        <label>Email or Phone</label>
+        <input type="text" required>
+      </div>
+      <div class="data">
+        <label>Select your skill</label>
+      </div>
+
+      <div class="data">
+        <label for="skill">Web development</label>
+        <input type="checkbox" id="skill1" required />
+      </div>
+
+      <div class="data">
+        <label for="skill">Android development</label>
+        <input type="checkbox" id="skill2" />
+      </div>
+      <div class="data">
+        <label for="skill">Machine Learning</label>
+        <input type="checkbox" id="skill3" />
+      </div>
+      <div class="data">
+        <label for="skill">Artificial Intelligence</label>
+        <input type="checkbox" id="skill4" />
+      </div>
+
+      <div class="data">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+      <div class="btn">
+        <div class="inner"></div>
+        <button type="submit" id="submit-btn2">SignUp</button>
+      </div>
+
+    </form>
+  </div>
 
   <footer>
     <div class="row">
