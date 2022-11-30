@@ -17,7 +17,7 @@
 <header>
   <div class="container">
     <div class="logo">
-      <img src="/Images/logo.png" alt="logo">
+      <a href="../index.html"><img src="/Images/logo.png" alt="logo"></a>
       <a href="../index.html">
         <h1>Alma<span>Link</span></h1>
       </a>
@@ -31,8 +31,8 @@
       </ul>
     </nav>
     <div class="sign-options">
-      <a href="">Sign Up</a>
-      <a href="/login-in.html">Sign In</a>
+      <a href="" id="sign-up">Sign Up</a>
+      <a href="" id="sign-in">Sign In</a>
     </div>
     <div class="hamburger-menu">
       <div class="bar"></div>
@@ -113,6 +113,119 @@
         <a href="#" class="info">More Info</a>
       </figcaption>
     </figure>
+  </div>
+
+  <div class="containo" id="signup_modal">
+    <label for="show" class="close-btn2 fas fa-times" title="close"></label>
+    <div class="text">
+      SignUp Form
+    </div>
+    <form action="#">
+      <div class="data">
+        <label>Email or Phone</label>
+        <input type="text" required>
+      </div>
+      <div class="data">
+        <label>Select your skill</label>
+      </div>
+
+      <div class="data">
+        <input type="checkbox" id="skill1" required />
+        <label for="skill">Web development</label>
+      </div>
+
+      <div class="data">
+        <input type="checkbox" id="skill2" />
+        <label for="skill">Android development</label>
+      </div>
+      <div class="data">
+        <input type="checkbox" id="skill3" />
+        <label for="skill">Machine Learning</label>
+      </div>
+      <div class="data">
+        <input type="checkbox" id="skill4" />
+        <label for="skill">Artificial Intelligence</label>
+      </div>
+
+      <div class="data">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+      <div class="btn">
+        <div class="inner"></div>
+        <button type="submit" id="submit-btn2">SignUp</button>
+      </div>
+
+    </form>
+  </div>
+
+
+  <div class="containo" id="signin_modal">
+    <label for="show" class="close-btn1 fas fa-times" title="close"></label>
+    <div class="text">
+      Login Form
+    </div>
+    <form action="#">
+      <div class="data">
+        <label>Email or Phone</label>
+        <input type="text" required>
+      </div>
+      <div class="data">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+      <div class="forgot-pass">
+        <a href="#">Forgot Password?</a>
+      </div>
+      <div class="btn">
+        <div class="inner"></div>
+        <button type="submit" id="login-btn">login</button>
+      </div>
+
+    </form>
+  </div>
+  <div class="containo" id="signup_modal">
+    <label for="show" class="close-btn2 fas fa-times" title="close"></label>
+    <div class="text">
+      SignUp Form
+    </div>
+    <form action="#">
+      <div class="data">
+        <label>Email or Phone</label>
+        <input type="text" required>
+      </div>
+      <div class="data">
+        <label>Select your skill</label>
+      </div>
+
+      <div class="data">
+        <input type="checkbox" id="skill1" required />
+        <label for="skill">Web development</label>
+      </div>
+
+      <div class="data">
+        <input type="checkbox" id="skill2" />
+        <label for="skill">Android development</label>
+      </div>
+      <div class="data">
+        <input type="checkbox" id="skill3" />
+        <label for="skill">Machine Learning</label>
+      </div>
+      <div class="data">
+        <input type="checkbox" id="skill4" />
+        <label for="skill">Artificial Intelligence</label>
+      </div>
+
+      <div class="data">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+      <div class="btn">
+        <div class="inner"></div>
+        <button type="submit" id="submit-btn2">SignUp</button>
+      </div>
+
+    </form>
   </div>
 
   <footer>
