@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Almalink</title>
+  <title>Quizzes and Challenges</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/quiz.css">
-  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-  <script src="/main.js" defer></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="/quiz.js" defer></script>
 </head>
 
 <body>
@@ -34,8 +34,8 @@
         </ul>
       </nav>
       <div class="sign-options">
-        <a href="">Sign Up</a>
-        <a href="/login-in.html">Sign In</a>
+        <a href="" id="sign-up">Sign Up</a>
+        <a href="" id="sign-in">Sign In</a>
       </div>
       <div class="hamburger-menu">
         <div class="bar"></div>
@@ -46,74 +46,140 @@
   <div class="banner">
     <h2 class="heading">Quiz Section</h2>
 
-    <p>Exercise your brain & Play some Quizzes <br>Let's have fun tonight</p>
+    <p>Exercise your brain & Play some Quizzes <br>
+      Let's have a brain storming session <br> Have a quick start</p>
   </div>
+  <div class="wrapper">
 
-  <section class="quiz-list">
-    <div class="container">
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <div class="info_box">
+      <div class="info-title"><span>Some Rules of this Quiz</span></div>
+      <div class="info-list">
+        <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+        <div class="info">2. Once you select your answer, it can't be undone.</div>
+        <div class="info">3. You can't select any option once time goes off.</div>
+        <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+        <div class="info">5. You'll get points on the basis of your correct answers.</div>
       </div>
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
-      </div>
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
-      </div>
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
-      </div>
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
-      </div>
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
-      </div>
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
-      </div>
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
-      </div>
-      <div class="box">
-        <img src="/Images/cs.png" alt="">
-        <p>CS Quiz</p>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
       </div>
     </div>
-  </section>
 
-  <div class="quiz-container" id="quiz">
-    <div class="quiz-header">
-      <h2 id="question">Question Text</h2>
-      <ul>
-        <li>
-          <input type="radio" name="answer" id="a" class="answer">
-          <label for="a" id="a_text">Answer</label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="b" class="answer">
-          <label for="b" id="b_text">Answer</label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="c" class="answer">
-          <label for="c" id="c_text">Answer</label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="d" class="answer">
-          <label for="d" id="d_text">Answer</label>
-        </li>
-      </ul>
-      <button id="submit">Submit</button>
+    <div class="quiz_box">
+      <div class="header">
+        <div class="title">Awesome Quiz Application</div>
+        <div class="timer">
+          <div class="time_left_txt">Time Left</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <!-- <div class="time_line"></div> -->
+      </div>
+      <section>
+        <div class="que_text">
+
+        </div>
+        <div class="option_list">
+
+        </div>
+      </section>
+
+
+      <div class="footer">
+        <div class="total_que">
+
+        </div>
+        <button class="next_btn">Next Que</button>
+      </div>
+    </div>
+
+
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Quiz!</div>
+      <div class="score_text">
+
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
     </div>
   </div>
+
+  <div class="containo" id="signin_modal">
+    <label for="show" class="close-btn1 fas fa-times" title="close"></label>
+    <div class="text">
+      Login Form
+    </div>
+    <form action="#">
+      <div class="data">
+        <label>Email or Phone</label>
+        <input type="text" required>
+      </div>
+      <div class="data">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+      <div class="forgot-pass">
+        <a href="#">Forgot Password?</a>
+      </div>
+      <div class="btn">
+        <div class="inner"></div>
+        <button type="submit" id="login-btn">login</button>
+      </div>
+
+    </form>
+  </div>
+  <div class="containo" id="signup_modal">
+    <label for="show" class="close-btn2 fas fa-times" title="close"></label>
+    <div class="text">
+      SignUp Form
+    </div>
+    <form action="#">
+      <div class="data">
+        <label>Email or Phone</label>
+        <input type="text" required>
+      </div>
+      <div class="data">
+        <label>Select your skill</label>
+      </div>
+
+      <div class="data">
+        <input type="checkbox" id="skill1" required />
+        <label for="skill">Web development</label>
+      </div>
+
+      <div class="data">
+        <input type="checkbox" id="skill2" />
+        <label for="skill">Android development</label>
+      </div>
+      <div class="data">
+        <input type="checkbox" id="skill3" />
+        <label for="skill">Machine Learning</label>
+      </div>
+      <div class="data">
+        <input type="checkbox" id="skill4" />
+        <label for="skill">Artificial Intelligence</label>
+      </div>
+
+      <div class="data">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+      <div class="btn">
+        <div class="inner"></div>
+        <button type="submit" id="submit-btn2">SignUp</button>
+      </div>
+
+    </form>
+  </div>
+
+
   <footer>
     <div class="row">
       <div class="col">
