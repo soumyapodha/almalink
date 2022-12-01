@@ -25,7 +25,3 @@ APPLICATION:
 -->We have a unique idea of organizing the biggest tech-fest of Odisha  "ALUMINISTA"  where we are going to conduct different competitive events such as blind coding, speed coding, etc. The scores will earn them extra marks in the interviews with the tie-up companies.
 
 FUTURE-ENDEAVORSWe have a fiery fire in our hearts to make this attempt of building an ever-expanding community of students and alumni a grand success. As of now, we are in the building phase and we are growing exponentially with our vision getting stronger each day. We are planning to build a website and an app to make this community expansive and accessible to every person across Odisha and then we are planning to expand it to other states of our country every college student must have the necessary exposure to succeed in life and we at ALMALINK are trying to build the biggest student-alumni community.
-
-
-
-Click Here to See the Website :- https://almalink.netlify.app
