@@ -945,3 +945,19 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-between;
 }
+
+.alert {
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  background: rgb(79, 255, 152);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}

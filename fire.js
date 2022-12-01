@@ -25,24 +25,37 @@ function submitForm(e) {
   let education_qualification = getElementVal("education_qualification");
   let current_company = getElementVal("current_company");
 
-
-
-
-  saveMessages(name, email, password, skills, current_position, education_qualification, current_company);
+  saveMessages(
+    name,
+    email,
+    password,
+    skills,
+    current_position,
+    education_qualification,
+    current_company
+  );
 
   //   enable alert
-  document.querySelector(".alert").style.display = "block";
+  document.querySelector(".alert").style.display = "flex";
 
   //   remove the alert
   setTimeout(() => {
     document.querySelector(".alert").style.display = "none";
-  }, 3000);
+  }, 2000);
 
   //   reset the form
   document.getElementById("signupform").reset();
 }
 
-const saveMessages = (name, email, password, skills, current_position, education_qualification, current_company) => {
+const saveMessages = (
+  name,
+  email,
+  password,
+  skills,
+  current_position,
+  education_qualification,
+  current_company
+) => {
   let newContactForm = alumniDB.push();
 
   newContactForm.set({
@@ -51,9 +64,8 @@ const saveMessages = (name, email, password, skills, current_position, education
     password: password,
     skills: skills,
     current_position: current_position,
-    education_qualification:education_qualification,
-    current_company:current_company,
-    
+    education_qualification: education_qualification,
+    current_company: current_company,
   });
 };
 
