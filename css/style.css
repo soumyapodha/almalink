@@ -69,7 +69,7 @@ a {
 button,
 .btn {
   display: block;
-  margin: 1rem auto;
+  margin-block: 1rem;
   padding: 0.25rem 1rem;
   width: fit-content;
   cursor: pointer;
@@ -384,6 +384,7 @@ header.active .bar::after {
   display: block;
   border-radius: 0;
   border: 2px solid black;
+  margin: 1rem auto;
 }
 
 /******** feature Section ********/
@@ -938,4 +939,9 @@ input[type="checkbox"] {
   width: 10% !important;
   position: relative;
   top: 0.5rem !important;
+}
+
+.group-btns {
+  display: flex;
+  justify-content: space-between;
 }
