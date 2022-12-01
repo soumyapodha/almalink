@@ -71,7 +71,6 @@ open_modal2.addEventListener("click", (e) => {
 });
 
 submit_btn2.addEventListener("click", (e) => {
-  e.preventDefault();
   containo2.style.display = "none";
 });
 
