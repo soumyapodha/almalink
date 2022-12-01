@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quizzes and Challenges</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almalink</title>
   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
@@ -13,14 +13,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="./quiz.css">
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="main.js" defer></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-  <script src="./quiz.js" defer></script>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
   <header>
     <div class="container">
       <div class="logo">
@@ -32,8 +31,8 @@
       <nav class="menu-list">
         <ul>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="index.html">Explore Colleges</a></li>
-          <li><a href="index.html">About Us</a></li>
+          <li><a href="#explore-university">Explore Colleges</a></li>
+          <li><a href="#about-us">About Us</a></li>
           <li><a href="/contact-us.html" target="_blank">Contact Us</a></li>
         </ul>
       </nav>
@@ -46,74 +45,7 @@
       </div>
     </div>
   </header>
-
-  <div class="banner">
-    <h2 class="heading">Quiz Section</h2>
-
-    <p>Exercise your brain & Play some Quizzes <br>
-      Let's have a brain storming session <br> Have a quick start</p>
-  </div>
-  <div class="wrapper">
-
-    <div class="start_btn"><button>Start Quiz</button></div>
-
-    <div class="info_box">
-      <div class="info-title"><span>Some Rules of this Quiz</span></div>
-      <div class="info-list">
-        <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-        <div class="info">2. Once you select your answer, it can't be undone.</div>
-        <div class="info">3. You can't select any option once time goes off.</div>
-        <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-        <div class="info">5. You'll get points on the basis of your correct answers.</div>
-      </div>
-      <div class="buttons">
-        <button class="quit">Exit Quiz</button>
-        <button class="restart">Continue</button>
-      </div>
-    </div>
-
-    <div class="quiz_box">
-      <div class="header">
-        <div class="title">Awesome Quiz Application</div>
-        <div class="timer">
-          <div class="time_left_txt">Time Left</div>
-          <div class="timer_sec">15</div>
-        </div>
-        <!-- <div class="time_line"></div> -->
-      </div>
-      <section>
-        <div class="que_text">
-
-        </div>
-        <div class="option_list">
-
-        </div>
-      </section>
-
-
-      <div class="footer">
-        <div class="total_que">
-
-        </div>
-        <button class="next_btn">Next Que</button>
-      </div>
-    </div>
-
-
-    <div class="result_box">
-      <div class="icon">
-        <i class="fas fa-crown"></i>
-      </div>
-      <div class="complete_text">You've completed the Quiz!</div>
-      <div class="score_text">
-
-      </div>
-      <div class="buttons">
-        <button class="restart">Replay Quiz</button>
-        <button class="quit">Quit Quiz</button>
-      </div>
-    </div>
-  </div>
+  <div class="alert">Form Submission Succesfull</div>
 
   <div class="containo" id="signin_modal">
     <label for="show" class="close-btn1 fas fa-times" title="close"></label>
@@ -144,37 +76,42 @@
     <div class="text">
       SignUp Form
     </div>
-    <form action="#">
+    <form action="" id="signupform">
       <div class="data">
-        <label>Email or Phone</label>
-        <input type="text" required>
-      </div>
-      <div class="data">
-        <label>Select your skill</label>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
       </div>
 
       <div class="data">
-        <input type="checkbox" id="skill1" required />
-        <label for="skill">Web development</label>
+        <label for="email" type="email">Email</label>
+        <input type="email" id="email" name="email" required>
       </div>
 
       <div class="data">
-        <input type="checkbox" id="skill2" />
-        <label for="skill">Android development</label>
-      </div>
-      <div class="data">
-        <input type="checkbox" id="skill3" />
-        <label for="skill">Machine Learning</label>
-      </div>
-      <div class="data">
-        <input type="checkbox" id="skill4" />
-        <label for="skill">Artificial Intelligence</label>
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
       </div>
 
       <div class="data">
-        <label>Password</label>
-        <input type="password" required>
+        <label for="skills">Skills</label>
+        <input type="text" id="skills" name="skills" required>
       </div>
+
+      <div class="data">
+        <label for="current_position">Current Position</label>
+        <input type="text" id="current_position" name="current_position" required>
+      </div>
+
+      <div class="data">
+        <label for="education_qualification">Higher Education Qualification</label>
+        <input type="text" id="education_qualification" name="education_qualification" required>
+      </div>
+
+      <div class="data">
+        <label for="current_company">Current Company</label>
+        <input type="text" id="current_company" name="current_company" required>
+      </div>
+
       <div class="btn">
         <div class="inner"></div>
         <button type="submit" id="submit-btn2">SignUp</button>
@@ -182,7 +119,6 @@
 
     </form>
   </div>
-
 
   <footer>
     <div class="row">
@@ -233,6 +169,8 @@
     <p class="copyright">Copyright - Team ALMALINK Ⓒ 2022 - All Rights Reserved</p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="fire.js"></script>
 </body>
 
 </html>
